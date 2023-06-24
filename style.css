@@ -1,1 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+  width: 85%;
+  display: flex;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.huddle {
+  width: 20rem;
+  height: 20rem;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.content {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  margin-top: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  align-self: flex-start;
+  font-size: 2rem;
+  color: hsl(257, 40%, 49%);
+  padding: 1.5rem 5rem;
+  border-radius: 7rem;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.346);
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
