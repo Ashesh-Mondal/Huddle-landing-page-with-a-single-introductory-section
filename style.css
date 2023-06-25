@@ -79,3 +79,76 @@ button:hover {
   background-color: hsl(300, 69%, 71%);
   cursor: pointer;
 }
+
+.icons {
+  color: whitesmoke;
+  position: absolute;
+  top: 65rem;
+  left: 120rem;
+}
+
+.facebook,
+.twitter,
+.instagram {
+  font-size: 2.5rem;
+  margin: 1rem;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+/* ###################### Mobile View ######################## */
+
+@media (max-width: 375px) {
+  :root {
+    font-size: 50%;
+  }
+
+  body {
+    background-image: url(./images/bg-mobile.svg);
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  button {
+    align-self: center;
+    margin-bottom: 5rem;
+  }
+
+  .icons {
+    color: whitesmoke;
+    position: absolute;
+    top: 95rem;
+    left: 13rem;
+  }
+
+  .facebook,
+  .twitter,
+  .instagram {
+    font-size: 2.5rem;
+    margin: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+
+  .facebook:hover,
+  .twitter:hover,
+  .instagram:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+  }
+}
